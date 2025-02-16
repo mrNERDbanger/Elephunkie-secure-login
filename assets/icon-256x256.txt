@@ -1,0 +1,1 @@
+Create an icon with these dimensions and place it in an assets folder 

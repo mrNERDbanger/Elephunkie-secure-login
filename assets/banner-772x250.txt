@@ -1,0 +1,1 @@
+Create a banner image with these dimensions and place it in an assets folder 

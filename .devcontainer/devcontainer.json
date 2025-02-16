@@ -1,0 +1,21 @@
+{
+    "name": "WordPress Plugin Development",
+    "image": "mcr.microsoft.com/devcontainers/php:8.2",
+    "features": {
+        "ghcr.io/devcontainers/features/node:1": {},
+        "ghcr.io/devcontainers/features/git:1": {}
+    },
+    "forwardPorts": [8080],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "bmewburn.vscode-intelephense-client",
+                "xdebug.php-debug",
+                "mrmlnc.vscode-apache",
+                "GitHub.copilot"
+            ]
+        }
+    },
+    "postCreateCommand": "sudo apt-get update && sudo apt-get install -y mariadb-server && sudo service mariadb start && composer create-project wordpress/wordpress:^6.0 /workspaces/wordpress",
+    "remoteUser": "vscode"
+} 
